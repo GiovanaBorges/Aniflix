@@ -3,7 +3,12 @@ import AniflixRoutes from './routes';
 
 function App() {
   return (
-    <AniflixRoutes/>
+    <>
+    <div className="bg-zinc-800 min-h-screen">
+        <AniflixRoutes/>
+      </div>
+    </>
+    
   );
 }
 
