@@ -1,10 +1,9 @@
 import React from 'react';
+import AniflixRoutes from './routes';
 
 function App() {
   return (
-    <div>
-      asdas
-    </div>
+    <AniflixRoutes/>
   );
 }
 
