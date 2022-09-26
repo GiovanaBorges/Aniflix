@@ -3,9 +3,22 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["mongodb"]
 }
 
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model Movie{
+    id  String   @id @default(auto()) @map("_id") @db.ObjectId
+    title String 
+    coverImage  String
+    images String[]
+    description String
+    durationMinutes Int
+    release_date String
+    studio String
+    synopsis String
 }
