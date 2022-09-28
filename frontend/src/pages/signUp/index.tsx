@@ -4,11 +4,7 @@ import {Button} from "../../components/button"
 function Login(){
     return(
         <>
-                
-            <div className="text-white mx-auto">
-                <div className="grid grid-cols-2 ">
-               
-                    
+                <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 md:bg-red-500 sm:bg-red-200">
                         <form className="flex flex-col bg-zinc-900 h-full justify-center justify-items-center">
                         <h1 className="mx-auto w-3/4 text-6xl font-light mb-3">Olá novamente</h1>
                             {
@@ -31,7 +27,7 @@ function Login(){
                         
                     </div>
                     </div>
-            </div>
+            
         </>
     )
 }
