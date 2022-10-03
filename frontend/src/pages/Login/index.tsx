@@ -24,12 +24,9 @@ function Login(){
                             <a className="mx-auto w-3/4 mt-5 text-lg " href="/">Não tenho conta <span className="text-red-600 hover:text-white">Criar.</span> </a>  
                         </form>
                     
-                    <div className="w-full h-screen ">
-                        {
-                            //<img src="./image-cover.png" alt="" />
-                        }
-                        
-                    </div>
+                    
+                            <img className="" src="./image-cover.png" alt="" />
+                    
                     </div>
             </div>
         </>

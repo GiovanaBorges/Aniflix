@@ -1,7 +1,7 @@
 import {Input}  from "../../components/input"
 import {Button} from "../../components/button"
 
-function Login(){
+function SignUp(){
     return(
         <>
                 <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 md:bg-red-500 sm:bg-red-200">
@@ -31,4 +31,4 @@ function Login(){
         </>
     )
 }
-export default Login
+export default SignUp
