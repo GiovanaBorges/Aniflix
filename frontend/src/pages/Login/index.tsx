@@ -25,7 +25,7 @@ function Login(){
                         </form>
                     
                     
-                            <img className="" src="./image-cover.png" alt="" />
+                            <img className="" src="./nflixCover.png" alt="" />
                     
                     </div>
             </div>
