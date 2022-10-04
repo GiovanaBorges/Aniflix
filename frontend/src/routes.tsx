@@ -7,7 +7,7 @@ function AniflixRoutes(){
         <>
             <Router>
                 <Routes>
-                    <Route element={<Login/>} path="/login"/>
+                    <Route element={<Login/>} path="/signin"/>
                     <Route element={<SignUp/>} path="/signup"/>
                 </Routes>
             </Router>
