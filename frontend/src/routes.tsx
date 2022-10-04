@@ -1,6 +1,7 @@
 import  {BrowserRouter as Router , Routes,Route} from "react-router-dom"
 import Login from  "./pages/Login"
 import SignUp from  "./pages/signUp"
+import Home from "./pages/home"
 
 function AniflixRoutes(){
     return(
@@ -9,6 +10,7 @@ function AniflixRoutes(){
                 <Routes>
                     <Route element={<Login/>} path="/signin"/>
                     <Route element={<SignUp/>} path="/signup"/>
+                    <Route element={<Home/>} path="/"/>
                 </Routes>
             </Router>
         </>
