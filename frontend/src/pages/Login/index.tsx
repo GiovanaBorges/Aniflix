@@ -20,7 +20,9 @@ function Login(){
                                 <Input text="Password"/>
                             </div>
                             <a className="mx-auto w-3/4 text-end my-4 text-lg text-red-500 hover:text-white " href="/">I forgot my password</a>  
-                            <Button type="submit" text="Sign In"/>
+                            <div className="flex justify-center w-full">
+                                <Button type="submit" text="Sign In"/>
+                            </div>
                             <a className="mx-auto w-3/4 mt-5 text-lg " href="/signup">I don't have an account <span className="text-red-600 hover:text-white">Sign Up.</span> </a>  
                         </form>
                     
