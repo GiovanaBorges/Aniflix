@@ -11,7 +11,7 @@ export interface Props{
 export function Card(props:Props){
     return(
         <>
-        <div className="max-w-5/12 max-h-72 p-3">
+        <div className="min-w-5/12 min-h-72 p-3">
             <img className="object-cover w-full max-h-44 mb-3" src="./nflixCover.png" alt=""/>
             <h3 className=" text-white font-bold text-2xl">{props.titulo}</h3>
             <div className="flex justify-between w-full mt-3 mb-3">
