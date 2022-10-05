@@ -23,7 +23,10 @@ function SignUp(){
                                 <Input text="Confirm Password"/>
                             </div>
                             <a className="mx-auto w-3/4 text-end my-4 text-lg text-red-500 hover:text-white " href="/">I forget my password</a>  
-                            <Button type="submit" text="Sign Up"/>
+                            <div className="flex justify-center w-full">
+                                <Button type="submit" text="Sign Up"/>
+
+                            </div>
                             <ButtonGoogle type="text" text="Continue with Google"/>
                             <a className="mx-auto w-3/4 mt-5 text-lg " href="/signin">I have an account <span className="text-red-600 hover:text-white">Sign In.</span> </a>  
                         </form>
