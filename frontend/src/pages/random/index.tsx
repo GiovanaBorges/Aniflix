@@ -20,7 +20,7 @@ export default function Random(Props:Props){
                         <p className="mx-auto w-3/4 mt-5 text-lg " >{Props.descricao}</p>  
                             <h3 className="my-4 w-3/4 mx-auto text-zinc-400 font-bold ">{Props.studio}</h3>
                             
-                            <div className="flex w-full ">
+                            <div className="mx-auto flex w-3/4">
                                 <Button text="Assistir" type="submit"/>
                                 <button  id="first_name" 
                                 className="flex justify-around bg-red-300 mt-2
