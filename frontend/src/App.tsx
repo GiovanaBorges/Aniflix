@@ -4,7 +4,7 @@ import AniflixRoutes from './routes';
 function App() {
   return (
     <>
-    <div className="bg-zinc-800 min-h-screen">
+    <div className="bg-zinc-800 h-auto">
         <AniflixRoutes/>
       </div>
     </>
