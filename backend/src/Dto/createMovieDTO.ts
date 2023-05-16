@@ -1,10 +1,10 @@
 export interface createMovieDTO{
-    title:String 
-    coverImage:String,
-    images: String[],
-    description :String,
+    title:string 
+    coverImage:string,
+    image:string,
     durationMinutes: number,
     release_date: string,
-    studio :String
-    synopsis: String
+    studio :string,
+    synopsis: string,
+    genreMovie: string
 }
