@@ -3,22 +3,46 @@
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["mongodb"]
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model Movie{
-    id  String   @id @default(auto()) @map("_id") @db.ObjectId
-    title String 
+    id  Int  @id @default(autoincrement())
+    title String @unique
     coverImage  String
-    images String[]
-    description String
+    image String
     durationMinutes Int
+    release_date String
+    synopsis String
+    genreMovie String
+}
+
+
+model Anime{
+    id  Int  @id @default(autoincrement())
+    title String @unique
+    coverImage  String
+    image String
     release_date String
     studio String
     synopsis String
+    genre String
+    EpQuantity Int
+    TempQuantity Int
+}
+
+model Serie{
+    id  Int  @id @default(autoincrement())
+    title String @unique
+    coverImage  String
+    image String
+    release_date String
+    EpQuantity Int
+    TempQuantity Int
+    synopsis String
+    genre String
 }
