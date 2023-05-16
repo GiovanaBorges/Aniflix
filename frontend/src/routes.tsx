@@ -3,6 +3,9 @@ import Login from  "./pages/Login"
 import SignUp from  "./pages/signUp"
 import Home from "./pages/home"
 import Random from "./pages/random"
+import MovieInfoPage from "./pages/movieInfoPage"
+import Anime from "./pages/animes"
+import Movies from "./pages/movies"
 
 function AniflixRoutes(){
     return(
@@ -12,10 +15,11 @@ function AniflixRoutes(){
                     <Route element={<Login/>} path="/signin"/>
                     <Route element={<SignUp/>} path="/signup"/>
                     <Route element={<Home/>} path="/"/>
-                    <Route element={<Random 
-                    descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit donec morbi vulputate molestie. Vitae interdum ac mi et congue cras tortor pellentesque pulvinar. Sem in eget hendrerit sed. Non amet, eget nunc, fermentum risus congue massa, in."
-                     titulo="Demon slayer" studio="aaaaaaaaa"/>} 
+                    <Route element={<Anime/>} path="/animes"/>
+                    <Route element={<Movies/>} path="/movies"/>
+                    <Route element={<Random />} 
                      path="/random"/>
+                     <Route element={<MovieInfoPage/>} path="/infoMovie"/>
                 </Routes>
             </Router>
         </>
