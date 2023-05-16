@@ -1,3 +1,5 @@
+import {Link, Route, Routes} from 'react-router-dom';
+
 export function Navbar(){
     return(
         <>
@@ -13,16 +15,26 @@ export function Navbar(){
             <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 mt-4 mx-5 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-gray-800 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-lg text-zinc-50 bg-blue-700 rounded md:bg-transparent md:text-red-600 md:p-0 dark:text-white" aria-current="page">Series</a>
+                <Link to="/" >
+                    <a  className="block py-2 pr-4 pl-3 text-lg text-zinc-50 bg-blue-700 rounded md:bg-transparent md:text-red-600 md:p-0 dark:text-white" aria-current="page">Series</a>
+                </Link>
+                
                 </li>
                 <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-lg text-zinc-50 rounded hover:bg-red-600 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Animes</a>
+                <Link to="/animes" >
+                    <a  className="block py-2 pr-4 pl-3 text-lg text-zinc-50  rounded hover:bg-red-600 md:hover:bg-transparent focus:text-red-600 md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Animes</a>
+                </Link>
                 </li>
                 <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-lg text-zinc-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Movies</a>
+                <Link to="/movies" > 
+                    <a className="block py-2 pr-4 pl-3 text-lg text-zinc-50 rounded hover:bg-gray-100 md:hover:bg-transparent focus:text-red-600 md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Movies</a>
+                </Link>
                 </li>
+                
                 <li>
-                <a href="#" className="block py-2 pr-4 pl-3 text-lg text-zinc-50 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Random</a>
+                <Link to="/random">
+                    <a className="block py-2 pr-4 pl-3 text-lg text-zinc-50 rounded hover:bg-gray-100 md:hover:bg-transparent focus:text-red-600 md:border-0 md:hover:text-red-600 md:p-0 dark:text-zinc-50 md:dark:hover:text-red-600 dark:hover:bg-gray-700 dark:hover:text-red-600 md:dark:hover:bg-transparent">Random</a>
+                </Link>
                 </li>
             </ul>
             </div>
