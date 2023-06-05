@@ -19,6 +19,8 @@ model Movie{
     release_date String
     synopsis String
     genreMovie String
+    user  User?   @relation(fields: [userId], references: [id])
+    userId  Int?
 }
 
 
@@ -33,6 +35,8 @@ model Anime{
     genre String
     EpQuantity Int
     TempQuantity Int
+    user  User?   @relation(fields: [userId], references: [id])
+    userId  Int?
 }
 
 model Serie{
@@ -45,4 +49,16 @@ model Serie{
     TempQuantity Int
     synopsis String
     genre String
+    user  User?   @relation(fields: [userId], references: [id])
+    userId  Int?
+}
+
+model User{
+  id Int @id @default(autoincrement())
+  name String 
+  password String
+  email String @unique
+  movie Movie[]
+  serie Serie[]
+  anime Anime[]
 }
