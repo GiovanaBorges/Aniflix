@@ -4,7 +4,6 @@ export interface createMovieDTO{
     image:string,
     durationMinutes: number,
     release_date: string,
-    studio :string,
     synopsis: string,
     genreMovie: string
 }
