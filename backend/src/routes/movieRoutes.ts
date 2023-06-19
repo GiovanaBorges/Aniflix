@@ -1,4 +1,4 @@
-import express from "express"
+import express, { NextFunction, Request, Response, response } from "express"
 const movieRoutes = express.Router()
 
 import {CreateMovieController} from "../modules/Movie/CreateMovie/CreateMovieController"
@@ -7,6 +7,7 @@ import {EditMovieController} from "../modules/Movie/EditMovie/EditMovieControlle
 import { DeleteMovieController } from "../modules/Movie/DeleteMovie/DeleteMovieController"
 import { GetMovieByGenreController } from "../modules/Movie/GetMovieByGenre/GetMovieByGenreController"
 import { GetMovieByTitleController } from "../modules/Movie/GetMovieByTitle/GetMovieByTitleController"
+import { JwtLogin } from "../middleare/jwtLogin"
 
 const getAllMovieController = new GetAllMovieController()
 const createMovieController = new CreateMovieController()
@@ -16,6 +17,20 @@ const deleteMovieController = new DeleteMovieController()
 // Searchs 
 const getMovieGenreController = new GetMovieByGenreController()
 const getMovieTitleControler  = new GetMovieByTitleController()
+
+
+//middleare 
+const jwtLogin = new JwtLogin()
+
+interface AuthenticateRequest extends Request {
+    user?: any;
+  }
+
+// Middleware to authenticate the token
+const authenticateToken = (req: AuthenticateRequest, res: Response, next: NextFunction) => {
+    jwtLogin.AuthenticateToken(req, res, next);
+  };
+  
 
 //MOVIES
 // list all available movies

@@ -8,7 +8,7 @@ export class CreateMovieController{
             coverImage,
             durationMinutes,
             release_date,
-            studio ,
+          
             synopsis,
             image,
             genreMovie
@@ -22,7 +22,7 @@ export class CreateMovieController{
             image,
             durationMinutes,
             release_date,
-            studio,
+      
             synopsis,
             genreMovie
         })
@@ -30,4 +30,3 @@ export class CreateMovieController{
         return res.status(201).json(result)
     }
 }
-
